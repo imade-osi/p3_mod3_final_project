@@ -86,7 +86,7 @@ newForm.addEventListener("submit", (evt) => {
 })
 
 
-// {} -> <html></html>
+
 function turnJSONtoHTML(appntObj) {
      //debugger 
     // if (stylystNameCard != "Imaria" && stylystNameCard != "Sekinah" && stylystNameCard != "May"){
