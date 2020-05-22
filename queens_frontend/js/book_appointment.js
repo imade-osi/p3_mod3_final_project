@@ -104,7 +104,7 @@ function turnJSONtoHTML(appntObj) {
       <p class="appntTime">Time: ${appntObj.time_text}  </p>
         <button class="delete-btn">Delete</button>
         <button class="edit-btn">Change Time</button>
-        <button id="eb">Extra Button</button>
+        
         <div class="edit-container" style="display: none;">
         <form class="edit-appnt-form" >
             <br>
@@ -116,13 +116,13 @@ function turnJSONtoHTML(appntObj) {
             <input type="submit" name="submit" value="Create New Appointment">
         </form>
         </div>`
-
+        //< button id = "eb" > Extra Button</button >
     let editForm = appntDiv.querySelector(".edit-container")
     let dltBtn = appntDiv.querySelector(".delete-btn")
     let editBtn = appntDiv.querySelector(".edit-btn")
-    let extraButton = appntDiv.querySelector("#eb")
+    //let extraButton = appntDiv.querySelector("#eb")
 
-    extraButton.addEventListener("click", (evt) => {
+    /*extraButton.addEventListener("click", (evt) => {
         
         let styleName = evt.target.parentNode.querySelector("h2")
         //debugger 
@@ -146,7 +146,7 @@ function turnJSONtoHTML(appntObj) {
             
         //     })
     })
-
+    */
 
     //  let pTag = appntDiv.querySelector("p")
 

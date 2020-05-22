@@ -12199,3 +12199,74 @@ Processing by AppointmentsController#destroy as */*
 Completed 204 No Content in 12ms (ActiveRecord: 9.2ms | Allocations: 976)
 
 
+Started GET "/appointments" for ::1 at 2020-05-21 21:55:52 -0400
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as */*
+  [1m[36mAppointment Load (1.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:3:in `sort'
+[active_model_serializers]   [1m[36mStylist Load (0.7ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStylist Load (0.4ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStylist Load (0.6ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (64.93ms)
+Completed 200 OK in 333ms (Views: 191.2ms | ActiveRecord: 67.4ms | Allocations: 22379)
+
+
+Started GET "/appointments" for ::1 at 2020-05-21 21:55:55 -0400
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:3:in `sort'
+[active_model_serializers]   [1m[36mStylist Load (0.4ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStylist Load (0.4ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStylist Load (0.4ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.7ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 1.6ms | Allocations: 5385)
+
+
+Started GET "/appointments" for ::1 at 2020-05-21 21:57:46 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mAppointment Load (1.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:3:in `sort'
+[active_model_serializers]   [1m[36mStylist Load (53.0ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStylist Load (1.5ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStylist Load (1.8ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (109.68ms)
+Completed 200 OK in 134ms (Views: 61.1ms | ActiveRecord: 57.6ms | Allocations: 5385)
+
+
+Started GET "/appointments" for ::1 at 2020-05-21 21:59:10 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mAppointment Load (2.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:3:in `sort'
+[active_model_serializers]   [1m[36mStylist Load (0.9ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStylist Load (0.5ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStylist Load (0.8ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.7ms)
+Completed 200 OK in 70ms (Views: 41.8ms | ActiveRecord: 4.5ms | Allocations: 5364)
+
+
+Started GET "/appointments" for ::1 at 2020-05-21 21:59:44 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mAppointment Load (5.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:3:in `sort'
+[active_model_serializers]   [1m[36mStylist Load (3.4ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStylist Load (10.5ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStylist Load (2.8ms)[0m  [1m[34mSELECT "stylists".* FROM "stylists" WHERE "stylists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (35.24ms)
+Completed 200 OK in 45ms (Views: 19.4ms | ActiveRecord: 22.3ms | Allocations: 5385)
+
+
