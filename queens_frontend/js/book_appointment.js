@@ -88,7 +88,7 @@ newForm.addEventListener("submit", (evt) => {
 
 
 function turnJSONtoHTML(appntObj) {
-     
+     //debugger 
     // if (stylystNameCard != "Imaria" && stylystNameCard != "Sekinah" && stylystNameCard != "May"){
         
     //     stylystNameCard = "General Booking"
